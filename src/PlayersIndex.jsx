@@ -8,6 +8,7 @@ export function PlayersIndex(props) {
           <p>team: {player.team}</p>
           <p>Position: {player.position}</p>
           <p>Dob: {player.dob}</p>
+          <button onClick={() => props.onShowPlayer(player)}>More info</button>
         </div>
       ))}
     </div>
