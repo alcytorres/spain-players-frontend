@@ -6,6 +6,10 @@ export function PlayersShow(props) {
     props.onUpdatePlayer(props.player.id, params, () => event.target.reset());
   };
 
+  const handleClick = () => {
+    props.onDestroyPlayer(props.player.id);
+  };
+
   return (
     <div>
       <h1>Player information</h1>
@@ -28,6 +32,7 @@ export function PlayersShow(props) {
         </div>
         <button type="submit">Update player</button>
       </form>
+      <button onClick={handleClick}>Destroy player</button>
     </div>
   );
 }

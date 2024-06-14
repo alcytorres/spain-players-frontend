@@ -14,3 +14,6 @@ export function PlayersIndex(props) {
     </div>
   );
 }
+
+
+
